@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="String : "
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+        android:id="@+id/etString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvString"
+        android:layout_marginRight="20dp"
+        android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890"
+        android:hint="Enter String" />
+
+    <TextView
+        android:id="@+id/tvInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Integer : "
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/etString"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+        android:id="@+id/etInt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInt"
+        android:layout_marginRight="20dp"
+        android:digits="1234567890"
+        android:hint="Enter Int" />
+
+    <TextView
+        android:id="@+id/tvDouble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Double : "
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/etInt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+        android:layout_marginRight="20dp"
+        android:id="@+id/etDouble"
+        android:hint="Enter Double"
+        android:digits="1234567890."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDouble"
+        />
+
+    <TextView
+        android:id="@+id/tvFloat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Float : "
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/etDouble"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+        android:layout_marginRight="20dp"
+        android:id="@+id/etFloat"
+        android:hint="Enter Float"
+        android:digits="1234567890."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFloat"
+        />
+    <TextView
+        android:id="@+id/tvChar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Character : "
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/etFloat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+        android:layout_marginRight="20dp"
+        android:id="@+id/etChar"
+        android:digits="qwertyuiopasdfghjklzxcvbnm1234567890"
+        android:maxLength="1"
+        android:hint="Enter Character"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvChar"
+        />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etChar"
+        android:layout_marginTop="10dp"
+        android:text="Next"
+        android:layout_marginLeft="140dp"
+        />
+
+</RelativeLayout>
+</layout>
