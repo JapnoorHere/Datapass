@@ -124,11 +124,35 @@
         android:layout_below="@+id/tvChar"
         />
 
+    <TextView
+        android:id="@+id/tvBool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boolean : "
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/etChar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+        android:layout_marginRight="20dp"
+        android:id="@+id/etBool"
+        android:digits="qwertyuiopasdfghjklzxcvbnm"
+        android:hint="Enter Boolean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBool"
+        />
+
     <Button
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etChar"
+        android:layout_below="@+id/etBool"
         android:layout_marginTop="10dp"
         android:text="Next"
         android:layout_marginLeft="140dp"

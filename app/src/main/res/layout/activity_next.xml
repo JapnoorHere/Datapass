@@ -101,5 +101,27 @@
         android:layout_marginLeft="10dp"
         android:layout_below="@id/tvFloat1"
         />
+
+    <TextView
+        android:id="@+id/tvBool0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Boolean : "
+        android:layout_below="@+id/tvChar0"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvBool1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvBool0"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tvChar0"
+        />
+
+
 </RelativeLayout>
 </layout>

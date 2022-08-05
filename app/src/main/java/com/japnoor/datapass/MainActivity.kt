@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("doub",binding.etDouble.text.toString().toDouble())
             intent.putExtra("flo", binding.etFloat.text.toString().toFloat())
             intent.putExtra("cha", binding.etChar.text.toString().first())
+            intent.putExtra("bool",binding.etBool.text.toString().toBoolean())
             startActivity(intent)
         }
     }

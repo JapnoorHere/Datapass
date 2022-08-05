@@ -12,6 +12,7 @@ class NextActivity : AppCompatActivity() {
     var doub: Double = 0.0
     var flo: Float = 0.0f
     var cha: Char = 'a'
+    var bool : Boolean=false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +30,8 @@ class NextActivity : AppCompatActivity() {
                 flo = it.getFloatExtra("flo", 0.0f)
             if (it.hasExtra("cha"))
                 cha = it.getCharExtra("cha", 'a')
+            if(it.hasExtra("bool"))
+                bool=it.getBooleanExtra("bool",false)
         } ?: kotlin.run { }
 
         binding.tvString1.setText(str)
@@ -36,5 +39,6 @@ class NextActivity : AppCompatActivity() {
         binding.tvDouble1.setText(doub.toString())
         binding.tvFloat1.setText(flo.toString())
         binding.tvChar1.setText(cha.toString())
+        binding.tvBool1.setText(bool.toString())
     }
 }
